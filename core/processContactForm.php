@@ -46,7 +46,7 @@ if(!empty($input)){
         $message = "<div style=\"color:#00ff00;\">Success!Your form has been submitted.</div>";
 
         # Instantiate the client.
-$mgClient = new Mailgun($mailgunkey);
+$mgClient = new Mailgun($mailgunKey);
 $domain = "sandbox6c420695c3e04d45a74bfa75cb3be647.mailgun.org";
 
 # Make the call to the client.
@@ -57,7 +57,7 @@ $result = $mgClient->sendMessage("$domain",
                 'text'    =>  $input ['message']
             ));
 
-var_dump($result);
+//var_dump($result);
     }else{
         $message = "<div style=\"color:#ff0000;\">Error!Please correct the errors below.</div>";
 }
