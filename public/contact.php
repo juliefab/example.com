@@ -1,4 +1,9 @@
 <?php
+$meta = [];
+$meta['title'] = 'Julie\'s Website Contact page';
+$meta['description'] = 'Hello, Please Contact Me';
+$meta['keywords'] = 'contact, form';
+
 require '../core/processContactForm.php';
 
 
