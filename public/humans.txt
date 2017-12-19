@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Julie Finch
+Site: contact.php
+Twitter: filmfr3ak
+Location: Chicago, IL
+
+/* SITE */
+Last update: 2017/12/19
+Standards: HTML5, CSS3,..
+Components: 
+Software: Atom

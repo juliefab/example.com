@@ -13,6 +13,9 @@
       <?php if(!empty($meta['keywords'])): ?>
       <meta name="keywords" content="<?php echo $meta['keywords']; ?>">
       <?php endif; ?>
+
+      <link rel="author" href="humans.txt">
+
       <link rel="stylesheet" type="text/css" href="dist/css/main.css">
   </head>
   <body>

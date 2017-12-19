@@ -14,7 +14,28 @@ $warning-color: #8a6d3b;
   }
 
 }
+@mixin links ($link, $visited, $hover, $active) {
+    & {
+        color: $link;
+        &:link{
+           color: $link;
+        }
+        &:visited {
+            color: $visited;
+        }
+        &:hover {
+            color: $hover;
+        }
+        &:active, &:focus {
+            color: $active;
+        }
+    }
+}
 
+#Wrapper div div#Content ul li a {
+    @include links(orange, blue, green, teal);
+
+}
 
 
     /* apply a natural box layout model to all elements, but allowing components to change */
@@ -198,4 +219,8 @@ $warning-color: #8a6d3b;
   @extend .message;
   border-color: $warning-color;
   color: $warning-color;
+}
+
+summary {
+  font-weight:bolder;
 }
